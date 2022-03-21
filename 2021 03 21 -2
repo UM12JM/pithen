@@ -17,3 +17,8 @@ a = input("키를 입력하세요  : ");
 b = input("몸무게를 입력하세요 : ");
 bmi = int(b)/((int(a)*0.01)**2)
 print (bmi)
+
+a = float(input("키를 입력하세요  : "))
+b = float(input("몸무게를 입력하세요 : "))
+print b/((a*0.01)**2)
+print (bmi)
