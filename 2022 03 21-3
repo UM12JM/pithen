@@ -1,0 +1,72 @@
+'''
+#print는 기본적으로 줄바꿈을 실행함
+print("hello")
+print("python")
+
+#줄바꿈 하지 않을 경우 end를 활용합니다.
+print("hello", end="");
+print("python");
+
+#end를 이용하여 끝에 문자 추가 가능
+print("hello", end=":");
+print("python");
+
+#콤마는 스페이스 키로 구분되어 출력됩니다
+print("a","b","c")
+
+#sep는 구분 기호를 바꿀 수 있습니다
+print("010","1234", "4251", sep="-")
+
+
+#문자열 format 지정하기
+#format의 의미는 형식 (구조 , 틀)
+
+#f는 이문자열이 형식을 갖춘 문자열 임을 의미
+print(f'I am {27}years old')
+
+                #공간 10칸 확보하기
+print(f'I am {27:10}years old')
+
+#가운데 정렬하여 출력하기
+print(f'I am {27:^10}years old')
+
+
+#자리 확보할 때 빈 공간의 특정 문자로 채우기
+print(f'I am {27:=^10}years old')
+
+#소수점 길이 지정하기(마지막 f는 float를 의미)
+print(f'PI is {3.141592:=^10.2f}')
+
+#변수값을 형식에 맞춰 출력하기
+weight=65
+height=177
+                         #마지막에 \를 이용하면 다음줄에 이어서 코딩작성이가능하다
+print(f"몸무게는 {weight:^10}kg,  \
+      키는 {height:^10.2f}cm 입니다")
+
+a , b = 10, 20
+
+print (a, b)
+
+#가리키는 대상을 찾아 들어가보면 아무것도 없음
+e=None;
+
+a=100;
+b=200;
+print (a, b)
+
+#변수 e를 이용하여 a와 v가 가리키는 값을 서로 바꾸는 코드를 작성해봅시다
+#코드 작성
+
+a=100;
+b=200;
+
+e=b;
+b=a;
+a=e;
+
+print(a, b)
+
+a,b = b,a;
+
+print(a, b)
