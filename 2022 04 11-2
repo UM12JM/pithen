@@ -1,0 +1,38 @@
+'''
+import time
+
+
+전체 : 리스트
+
+
+for a in [1,2,3,4,5]:
+    print(a)
+    time.sleep(1)
+
+#문제
+
+리스트안에 들어있는 자연수 중에서
+홀수의 갯수와, 짝수의갯수를 출력하는
+프로그램을 완성해 봅시다.
+짝수란 2로 나누었을때 나머지 0
+
+import time
+
+for a in [1,2,3,4,5]:
+    if a%2==0
+    print
+    else a%2==1
+    print
+'''
+
+'''범위표현하기'''
+
+for x in range(0, 10, 2):
+    print(x)
+
+#범위를 리스트로 바꾸기
+
+a = list( range(0,10))
+
+for x in a:
+    print(x)
