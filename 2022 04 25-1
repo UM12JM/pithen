@@ -1,0 +1,12 @@
+#234532를 455로 나눌떄 나머지 구하기 %사용 x
+
+a=234532
+b=455
+c=0
+while a<=b:
+    while c<b: 
+        print(a-b*c,end = ' ')
+        c+=1
+    print()
+    c=0
+    
