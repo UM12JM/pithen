@@ -1,0 +1,35 @@
+#입력받은 자연수의 약수를 출력하는
+#프로그램작성
+
+#자연수 = 자연사태의 갯수를 샐 수 있는 수와 의미가 비슷
+#12의 약수 : 1,2,3,4,6,12
+#14532의 약수 :
+'''
+n = input("입력 :")
+n = int(n)
+
+range(1,n)
+for x in range(1,n+1):
+    if n%x==0:
+        print(f'{x}는 n의 약수이다.')
+
+'''
+a = input("첫번째 숫자입력: ")
+a = int(a)
+
+b = input("두번째 숫자입력: ")
+b = int(b)
+# 12와 20의 공약수 : 1,2,4
+c = []
+for x in range(1,a+1):
+    if a % x==0:
+        if b % x==0:
+            c.append(x)
+print(c[-1])
+
+최대공약수
+for x in range(1,a+1):
+    if a%x==0:
+        if b%x==0:
+            c=x;
+print(c)
