@@ -1,0 +1,62 @@
+'''
+a= 49
+m=3
+b=0
+  #apple is 46
+while a>=m:
+          b+=1
+          a=a-m
+
+print(f'남은 사과는 {a}개며, 사람당{b}개 입니다.')
+
+a=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+for x in a:
+          if x % 4 ==0:
+                    print()
+
+print(x)
+
+BOARD=[  [1,2,5],
+         [3,4,6 ],
+         [8,7,0]]
+
+#화면에 보드상태 보여주기
+print(BOARD[0])
+print(BOARD[1])
+print(BOARD[2])
+
+'''
+r=1
+c=1
+
+key = input('wasd중 하나입력 : ')
+
+#만약 key값이 d와 같ㄷ다면
+    # BOARD[2][2]와[2][1]바꾸기
+
+if key == 'd':
+    BOARD[r][c],BOARD[r][c+1]=BOARD[r][c+1],BOARD[r][c]
+    r=r
+    c=c+1
+else key == 'a':
+    BOARD[r][c],BOARD[r][c-1]=BOARD[r][c-1],BOARD[r][c]
+    r=r
+    c=c-1
+else key == 's':
+    BOARD[r][c],BOARD[r+1][c]=BOARD[r+1][c],BOARD[r][c]
+    r=r+1
+    c=c
+else key == 'w':
+    BOARD[r][c],BOARD[r-1][c]=BOARD[r-1][c],BOARD[r][c]
+    r=r-1
+    c=c
+
+print(BOARD[0])
+print(BOARD[1])
+print(BOARD[2])
+'''
+사물함=['가방','차키','폰',' ']
+
+빈간위치 =3
+사물함[빈칸위치-1],사물함[빈칸위치]=사물함[빈칸위치],사물함[빈칸위치-1]
+빈칸위치 -=1
