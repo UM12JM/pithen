@@ -1,0 +1,45 @@
+import random
+c=0
+m-0
+
+while True:
+    user = input("가위 바위 보 중에 하나를 입력 :")
+    if user=='가위':
+        if random.choice(["가위","바위","보"])=="가위":
+            print("무승부")
+        elif random.choice(["가위","바위","보"])=="바위":
+            print("패")
+            c+=1
+        else:
+            print("승")
+            m+=1
+
+    if user=='바위':
+        if random.choice(["가위","바위","보"])=="가위":
+            print("승")
+            m+=1
+            
+        elif random.choice(["가위","바위","보"])=="바위":
+            print("무승부")
+    
+        else:
+            print("패")
+            c+=1
+
+    if user=='보':
+        if random.choice(["가위","바위","보"])=="가위":
+            print("패")
+            c+=1
+        elif random.choice(["가위","바위","보"])=="바위":
+            print("승")
+            m+=1
+        else:
+            print("무승부")
+    if c==4:
+        print("당신이 졌습니다")
+        break
+    if m==4:
+        print("당신이 이겼습니다")
+        break
+
+
